@@ -1,49 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
     <title>Desafio 1 - Calculando total</title>
-</head>
-<body>
+  </head>
+  <body>
     <section>
-            <div id="target">
-                <img alt="" id="imgTarget">
-                <label id="nameTarget">Samsung s100</label>
-                <label for="" id="textPrecio"></label>
-                <br>
-                <div class="input-group mb-3" id="sizeInput">
-                    <input type="number" class="form-control" placeholder="Cantidad" aria-label="Username" id="cantidad">
-                </div>
+      <div id="target">
+        <img alt="" id="imgTarget" />
+        <label id="nameTarget">Samsung s100</label>
+        <label for="" id="textPrecio"></label>
+        <br />
+        <div class="input-group mb-3" id="sizeInput">
+          <input
+            type="number"
+            class="form-control"
+            placeholder="Cantidad"
+            aria-label="Username"
+            id="cantidad"
+          />
+        </div>
 
-                <div>
-                    <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off" checked value="0">
-                    <label class="btn btn-outline-success" for="success-outlined">Calipso</label>
-    
-                    <input type="radio" class="btn-check" name="options-outlined" id="dark-outlined" autocomplete="off" value="1">
-                    <label class="btn btn-outline-dark" for="dark-outlined">Negro</label>
-    
-                    <input type="radio" class="btn-check" name="options-outlined" id="light-outlined" autocomplete="off" value="2">
-                    <label class="btn btn-outline-light" for="light-outlined">Blanco</label>
-                </div>
-                <br>
-                
-                <button type="button" class="btn btn-light" id="buttonTotal">Calcular Total</button>
-            </div>
-    
-            <div id="targetDescription">
-                <label id="totalTargetDesc"></label>
-                <label id="cantidadTargetDesc"></label>
-                <div id="divColorTargetDesc">
-                    <label>Color: </label>
-                    &nbsp
-                    <div class="circulo"></div>
-                </div>  
-            </div>
+        <div>
+          <input
+            type="radio"
+            class="btn-check"
+            name="options-outlined"
+            id="success-outlined"
+            autocomplete="off"
+            checked
+            value="0"
+          />
+          <label class="btn btn-outline-success" for="success-outlined"
+            >Calipso</label
+          >
+
+          <input
+            type="radio"
+            class="btn-check"
+            name="options-outlined"
+            id="dark-outlined"
+            autocomplete="off"
+            value="1"
+          />
+          <label class="btn btn-outline-dark" for="dark-outlined">Negro</label>
+
+          <input
+            type="radio"
+            class="btn-check"
+            name="options-outlined"
+            id="light-outlined"
+            autocomplete="off"
+            value="2"
+          />
+          <label class="btn btn-outline-light" for="light-outlined"
+            >Blanco</label
+          >
+        </div>
+        <br />
+
+        <button type="button" class="btn btn-light" id="buttonTotal">
+          Calcular Total
+        </button>
+      </div>
+
+      <div id="targetDescription">
+        <label id="totalTargetDesc"></label>
+        <label id="cantidadTargetDesc"></label>
+        <div id="divColorTargetDesc">
+          <label>Color: </label>
+          &nbsp
+          <div class="circulo"></div>
+        </div>
+      </div>
     </section>
     <script src="assets/js/script.js"></script>
-</body>
+  </body>
 </html>
