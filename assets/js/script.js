@@ -57,6 +57,8 @@ function calcularTotal() {
 
     totalTargetDescription.innerHTML = "Total:" + totalDesc;
 
+    cantidadTargetDesc.innerHTML = "Cantidad:" + " " + cantidad.value
+
     circuloColor = document.querySelector('input[name="options-outlined"]:checked').value;
     circulo = document.querySelector('.circulo');
     circulo.style.border = "none";
