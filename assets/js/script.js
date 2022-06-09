@@ -6,8 +6,8 @@ mainBody.style.backgroundRepeat = "no-repeat";
 
 //TARGET--------------------------------------------------------------------------------------------------------------------
 target = document.querySelector('#target')
-target.style.height = 400 + "px";
-target.style.width = 400 + "px";
+target.style.height = 500 + "px";
+target.style.width = 500 + "px";
 target.style.backgroundColor = "black";
 target.style.borderRadius = 20 + "px";
 target.style.display = "flex";
@@ -15,6 +15,11 @@ target.style.flexDirection = "column";
 target.style.justifyContent = "center";
 target.style.alignItems = "center";
 target.style.marginRight = 50+"px";
+target.style.boxShadow = "0px 0px 100px red";
+
+nameTarget = document.querySelector('#nameTarget')
+nameTarget.style.fontSize = "20px";
+nameTarget.style.color = "white";
 
 imgTarget = document.querySelector('#imgTarget')
 imgTarget.style.height = 200 + "px";
@@ -56,8 +61,11 @@ function calcularTotal() {
     totalDesc = precio * cantidad.value;
 
     totalTargetDescription.innerHTML = "Total:" + totalDesc;
-
-    cantidadTargetDesc.innerHTML = "Cantidad:" + " " + cantidad.value
+    if(cantidad.value == ""){
+        cantidadTargetDesc.innerHTML = "Cantidad:" + " " + 0
+    }else{
+        cantidadTargetDesc.innerHTML = "Cantidad:" + " " + cantidad.value
+    }
 
     circuloColor = document.querySelector('input[name="options-outlined"]:checked').value;
     circulo = document.querySelector('.circulo');
@@ -97,7 +105,7 @@ targetDescription.style.backgroundColor = "black";
 targetDescription.style.borderRadius = 20 + "px";
 targetDescription.style.width = 150 + "px";
 targetDescription.style.height = 150 + "px";
-
+targetDescription.style.boxShadow = "0px 0px 100px blue";
 
 totalTargetDescription = document.querySelector('#totalTargetDesc')
 totalTargetDescription.innerHTML = "Total:" + " " + 0
